@@ -1,5 +1,5 @@
 'use client'
-import { Sheet, SheetClose, SheetContent, SheetTrigger, } from "@/components/ui/sheet"
+import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger, } from "@/components/ui/sheet"
 import { sidebarLinks } from "@/constants"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
@@ -21,6 +21,7 @@ const MobileNav = () => {
                     />
                 </SheetTrigger>
                 <SheetContent side={'left'} className="border-none bg-dark-1">
+                    <SheetTitle className="sr-only" />
                     <Link href={'/'} className="flex items-center gap-1">
                         <Image src={'/icons/logo.svg'}
                             width={32}
